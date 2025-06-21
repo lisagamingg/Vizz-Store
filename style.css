@@ -1,0 +1,931 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;0,800;0,900&display=swap');
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;  
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar {
+    width: 100%;
+    background-color: rgb(0, 0, 0); 
+    color: white; 
+    padding: 15px 7%; 
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    flex-wrap: wrap; 
+}
+
+.navbar .navbar-logo h1 {
+    font-size: 35px;
+    color: red; 
+}
+
+.navbar .navbar-logo .tec {
+    color: #f3f3f3; 
+}
+
+.navbar ul {
+    list-style: none;
+    gap: 25px;
+    display: flex;
+    margin: 0;
+    padding: 0; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+}
+
+.navbar ul li {
+    position: relative;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: white; 
+    transition: 0.3s ease;
+    padding: 5px 0;
+}
+
+
+.navbar ul li a::before { 
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    left: 0;
+    bottom: 0; 
+    background-color: red;
+    transition: 0.3s ease;
+}
+
+.navbar ul li a:hover::before {
+    width: 100%;
+}
+
+.navbar ul li a:hover {
+    color: red; 
+}
+
+.navbar-search {
+    display: flex; 
+    align-items: center; 
+}
+
+.navbar-search input {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 5px;
+    background-color: white; 
+    color: black; 
+}
+
+.navbar-search button {
+    padding: 8px 15px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-search button:hover {
+    background-color:red; 
+}
+
+/* css home */
+.home {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 80px; 
+    color: white; 
+    text-align: center; 
+}
+
+.home .isi {
+    padding: 1.4rem 7%;
+    text-align: center; 
+    width: 100%; 
+}
+
+.isi a{
+    text-decoration: none;
+}
+
+.isi h1{
+    margin-top: 1rem;
+    font-size: 45px;
+    white-space: nowrap; 
+}
+
+.isi p {
+    font-size: 18px;
+    font-weight: 100;
+}
+
+.isi .cta {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    color: white;
+    background-color: red;
+    border-radius: 0.2rem;
+    transition: background-color 0.3s ease; 
+}
+
+.isi .cta:hover {
+    background-color: red;
+}
+
+/* Login */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('img/benedetta.jpeg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.wraper {
+    width: 420px;
+    max-width: 90%; 
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255,  .2);
+    backdrop-filter: blur(20px);
+    color: white;
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+
+.wraper h1 {
+    font-size: 36px;
+    text-align: center;
+    color: black;
+}
+
+.wraper .input-box {
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: white;
+    padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder {
+    color: white;
+}
+
+.wraper .lupa-pass {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+}
+
+.lupa-pass label input {
+    accent-color: white;
+    margin-right: 3px;
+}
+
+.lupa-pass a {
+    color: white;
+    text-decoration: none;
+}
+
+.wraper .tombol {
+    width: 100%;
+    height: 45px;
+    background: white;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.wraper .link-daftar {
+    font-size: 14.5;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.link-daftar p a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+body.tentang-page {
+    background: url('img/benedetta.jpeg.jpg'); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.tentang-content {
+    flex-grow: 1;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.tentang-content .container {
+    background: rgba(0, 0, 0, 0.75); 
+    padding: 40px; 
+    border-radius: 15px; 
+    max-width: 850px; 
+    width: 90%;
+    color: #f0f0f0; 
+    line-height: 1.8; 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); 
+
+    border: 3px solid transparent; 
+    border-image: linear-gradient(to right, red, #ff4d4d, red); 
+    border-image-slice: 1; 
+    position: relative; 
+
+    transition: all 0.4s ease-in-out;
+}
+
+.tentang-content .container:hover {
+    box-shadow: 0 10px 20px rgba(255, 0, 0, 0.5); 
+}
+
+
+.tentang-content .container h1,
+.tentang-content .container h2 {
+    text-align: center;
+    color: red; 
+    margin-bottom: 25px;
+    font-size: 2.8em; 
+    text-shadow: 0 0 8px rgba(255, 0, 0, 0.5); 
+    letter-spacing: 1.5px; 
+}
+
+.tentang-content .container h2 {
+    font-size: 2.2em; 
+    margin-top: 40px;
+}
+
+.tentang-content .container p {
+    margin-bottom: 20px; 
+    text-align: justify;
+}
+
+.tentang-content .container ul {
+    list-style-type: '⭕ '; 
+    margin-left: 30px; 
+    margin-bottom: 20px;
+}
+
+.tentang-content .container ul li {
+    margin-bottom: 12px;
+    padding-left: 5px; 
+}
+
+.tentang-content .container hr {
+    border: none;
+    height: 2px;
+    background: linear-gradient(to right, transparent, red, transparent);
+    margin: 30px 0;
+    opacity: 0.6;
+}
+
+body.contact-page {
+    background: url('img/benedetta.jpeg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    color: #f0f0f0;
+}
+
+/* Hero Section */
+.contact-hero {
+    width: 100%;
+    padding: 120px 7% 60px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    margin-bottom: 40px;
+}
+
+.contact-hero .hero-content h1 {
+    font-size: 3.5em;
+    color: red;
+    margin-bottom: 15px;
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.6);
+}
+
+.contact-hero .hero-content p {
+    font-size: 1.2em;
+    color: #ccc;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Main Contact Section (Form & Info) */
+.contact-form-section {
+    flex-grow: 1;
+    width: 100%;
+    padding: 0 7% 50px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.contact-form-section .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 1100px;
+    width: 100%;
+    justify-content: center;
+}
+
+.form-card,
+.info-card {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 35px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+    color: #f0f0f0;
+    flex: 1;
+    min-width: 300px;
+    max-width: calc(50% - 15px);
+
+    border: 2px solid transparent;
+    border-image: linear-gradient(to bottom right, red, #880000);
+    border-image-slice: 1;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-card:hover,
+.info-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(255, 0, 0, 0.4);
+}
+
+.form-card h2,
+.info-card h2 {
+    color: red;
+    font-size: 2em;
+    margin-bottom: 25px;
+    text-align: center;
+    text-shadow: 0 0 5px rgba(255, 0, 0, 0.4);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #e0e0e0;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 0, 0, 0.6);
+    border-radius: 5px;
+    color: white;
+    font-size: 1em;
+    outline: none;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group textarea:focus {
+    border-color: red;
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.submit-btn-contact {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 2px 8px rgba(255, 0, 0, 0.4);
+}
+
+.submit-btn-contact:hover {
+    background-color: #cc0000;
+    transform: translateY(-2px);
+}
+
+/* Contact Info Card */
+.info-card .contact-info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.info-card .contact-info-item i {
+    font-size: 1.5em;
+    color: red;
+    margin-right: 15px;
+    width: 30px;
+    text-align: center;
+}
+
+.info-card .contact-info-item p {
+    margin: 0;
+    font-size: 1.1em;
+    color: #e0e0e0;
+}
+
+.contact-container-outer {
+    width: 100%;
+    padding: 50px 7%; 
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-grow: 1; 
+}
+
+
+.contact-container {
+  text-align: center;
+  color: #f0f0f0; 
+  background: rgba(0, 0, 0, 0.8); 
+  padding: 35px; 
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+  border: 2px solid transparent;
+  border-image: linear-gradient(to bottom right, red, #880000);
+  border-image-slice: 1;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 900px; 
+  width: 100%; 
+}
+
+.contact-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(255, 0, 0, 0.4);
+}
+
+
+.contact-container h2 {
+  font-size: 2em; 
+  margin-bottom: 25px; 
+  color: red; 
+  text-shadow: 0 0 5px rgba(255, 0, 0, 0.4);
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+  gap: 20px; 
+  justify-content: center; 
+  padding: 0; 
+}
+
+.contact-box {
+  background: rgba(255, 255, 255, 0.1); 
+  border: 1px solid rgba(255, 0, 0, 0.6); 
+  backdrop-filter: blur(5px); 
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 10px; 
+  padding: 20px; 
+  color: white; 
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-size: 1.1em; 
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 120px; 
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.contact-box i {
+    font-size: 2.5em; 
+    margin-bottom: 10px; 
+    color: red; 
+    transition: transform 0.3s ease;
+}
+
+.contact-box:hover {
+  background: rgba(255, 0, 0, 0.8); 
+  transform: translateY(-3px); 
+  box-shadow: 0 5px 15px rgba(255, 0, 0, 0.4); 
+  color: white; 
+}
+
+.contact-box:hover i {
+    transform: scale(1.1);
+    color: white; 
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+    .navbar {
+        padding: 15px 5%;
+    }
+    .navbar ul {
+        gap: 15px;
+    }
+    .navbar ul li a {
+        font-size: 16px;
+    }
+    .navbar-search input {
+        width: 120px; 
+    }
+
+    .home .isi h1 {
+        font-size: 38px;
+    }
+    .home .isi p {
+        font-size: 16px;
+    }
+
+    .tentang-content .container {
+        padding: 30px;
+    }
+    .tentang-content .container h1 {
+        font-size: 2.5em;
+    }
+    .tentang-content .container h2 {
+        font-size: 2em;
+    }
+
+    .contact-hero .hero-content h1 {
+        font-size: 3em;
+    }
+    .contact-hero .hero-content p {
+        font-size: 1.1em;
+    }
+    .form-card,
+    .info-card {
+        padding: 30px;
+    }
+    .form-card h2,
+    .info-card h2 {
+        font-size: 1.8em;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 3%;
+        position: relative; 
+    }
+    .navbar-logo {
+        margin-bottom: 15px;
+    }
+    .navbar ul {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .navbar-search {
+        width: 100%;
+        justify-content: center;
+    }
+    .navbar-search input {
+        flex-grow: 1;
+        max-width: 250px;
+    }
+
+    .home {
+        padding-top: 150px;
+    }
+    .home .isi h1 {
+        font-size: 30px;
+        white-space: normal;
+    }
+    .home .isi p {
+        font-size: 15px;
+    }
+    .isi .cta {
+        font-size: 1em;
+        padding: 0.4rem 0.8rem;
+    }
+
+    .wraper {
+        padding: 25px 30px;
+    }
+    .wraper h1 {
+        font-size: 30px;
+    }
+
+    .tentang-content .container {
+        padding: 25px;
+        max-width: 90%;
+    }
+    .tentang-content .container h1 {
+        font-size: 2.2em;
+    }
+    .tentang-content .container h2 {
+        font-size: 1.8em;
+    }
+    .tentang-content .container p,
+    .tentang-content .container ul li {
+        font-size: 0.95em;
+    }
+
+    .contact-hero {
+        padding: 100px 5% 40px;
+    }
+    .contact-hero .hero-content h1 {
+        font-size: 2.5em;
+    }
+    .contact-hero .hero-content p {
+        font-size: 1em;
+    }
+
+    .contact-form-section .container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .form-card,
+    .info-card {
+        min-width: unset;
+        width: 90%;
+        max-width: 450px; 
+        padding: 25px;
+    }
+    .form-card h2,
+    .info-card h2 {
+        font-size: 1.6em;
+    }
+    .form-group label {
+        font-size: 0.9em;
+    }
+    .form-group input,
+    .form-group textarea {
+        padding: 10px;
+        font-size: 0.9em;
+    }
+    .submit-btn-contact {
+        padding: 12px;
+        font-size: 1em;
+    }
+    .info-card .contact-info-item p {
+        font-size: 1em;
+    }
+    
+    /* Adjustments for contact-container on smaller screens */
+    .contact-container-outer {
+        padding: 30px 5%;
+    }
+    .contact-container {
+        padding: 25px;
+        max-width: 90%;
+    }
+    .contact-container h2 {
+        font-size: 1.8em;
+        margin-bottom: 20px;
+    }
+    .contact-grid {
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); 
+        gap: 15px;
+    }
+    .contact-box {
+        font-size: 0.9em;
+        padding: 15px;
+        min-height: 100px;
+    }
+    .contact-box i {
+        font-size: 2em;
+        margin-bottom: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 10px 2%;
+  }
+  .navbar-logo h1 {
+    font-size: 28px;
+  }
+  .navbar ul {
+    gap: 10px;
+  }
+  .navbar ul li a {
+    font-size: 13px;
+  }
+  .navbar-search input {
+    padding: 6px 10px;
+    font-size: 0.8em;
+  }
+  .navbar-search button {
+    padding: 6px 10px;
+    font-size: 0.8em;
+  }
+
+  .home {
+    padding-top: 130px;
+  }
+  .home .isi h1 {
+    font-size: 24px;
+  }
+  .home .isi p {
+    font-size: 14px;
+  }
+  .isi .cta {
+    font-size: 0.9em;
+    padding: 0.3rem 0.7rem;
+  }
+
+  .wraper {
+    padding: 20px 25px;
+  }
+  .wraper h1 {
+    font-size: 28px;
+  }
+  .input-box input {
+    font-size: 14px;
+    padding: 15px 40px 15px 15px;
+  }
+  .lupa-pass,
+  .link-daftar p {
+    font-size: 13px;
+  }
+  .tombol {
+    font-size: 14px;
+    height: 40px;
+  }
+
+  .tentang-content .container {
+    padding: 20px;
+  }
+  .tentang-content .container h1 {
+    font-size: 2em;
+  }
+  .tentang-content .container h2 {
+    font-size: 1.6em;
+  }
+  .tentang-content .container p,
+  .tentang-content .container ul li {
+      font-size: 0.9em;
+  }
+  .tentang-content .container ul {
+      margin-left: 20px;
+  }
+
+  .contact-hero {
+    padding: 80px 3% 30px;
+  }
+  .contact-hero .hero-content h1 {
+    font-size: 2em;
+  }
+  .contact-hero .hero-content p {
+    font-size: 0.9em;
+  }
+
+  .contact-form-section {
+    padding: 0 3% 30px;
+  }
+  .form-card,
+  .info-card {
+    padding: 20px;
+    width: 100%;
+  }
+  .form-card h2,
+  .info-card h2 {
+    font-size: 1.4em;
+  }
+  .form-group label {
+    font-size: 0.85em;
+  }
+  .form-group input,
+  .form-group textarea {
+    padding: 8px;
+    font-size: 0.85em;
+  }
+  .submit-btn-contact {
+    padding: 10px;
+    font-size: 0.9em;
+  }
+  .info-card .contact-info-item i {
+    font-size: 1.3em;
+  }
+  .info-card .contact-info-item p {
+    font-size: 0.9em;
+  }
+
+  .contact-container-outer {
+    padding: 20px 3%;
+  }
+  .contact-container {
+    padding: 20px;
+  }
+  .contact-container h2 {
+    font-size: 1.5em; 
+    margin-bottom: 15px;
+  }
+  .contact-grid {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); 
+    gap: 10px;
+  }
+  .contact-box {
+      font-size: 0.75em;
+      padding: 10px;
+      min-height: 70px;
+  }
+  .contact-box i {
+      font-size: 1.5em;
+  }
+}
+
+@media (max-width: 375px) {
+    .navbar-logo h1 {
+        font-size: 24px;
+    }
+    .navbar ul {
+        gap: 8px;
+    }
+    .navbar ul li a {
+        font-size: 12px;
+    }
+    .navbar-search input,
+    .navbar-search button {
+        padding: 5px 8px;
+        font-size: 0.7em;
+    }
+
+    .home .isi h1 {
+        font-size: 20px;
+    }
+    .home .isi p {
+        font-size: 13px;
+    }
+
+    .wraper {
+        padding: 15px 20px;
+    }
+    .wraper h1 {
+        font-size: 24px;
+    }
+
+    .contact-hero .hero-content h1 {
+        font-size: 1.8em;
+    }
+    .contact-hero .hero-content p {
+        font-size: 0.8em;
+    }
+}
